@@ -3,18 +3,15 @@ $pageTitle = "Galería";
 require 'includes/header.php'; 
 ?>
 
-<!-- Encabezado de la página (minimalista) -->
 <div class="page-header" style="text-align: center; padding: 3rem 1.5rem; color: white; background-color: var(--alianza-blue, #003366);">
   <h1 class="display-4 fw-bold">GALERÍA</h1>
   <p class="lead mb-0">Las mejores imágenes de Alianza Lima</p>
 </div>
 
-<!-- Gallery: grid de cards responsive y minimalistas -->
 <div class="container my-5">
   <div class="row g-4">
 
     <?php
-    // Fotos históricas por año ganadas (ajusta las rutas si hace falta)
     $images = [
       ['year' => '2001', 'src' => 'assets/img/historia/2001.jpg', 'title' => 'Campeón 2001'],
       ['year' => '2010', 'src' => 'assets/img/historia/1933.jpg', 'title' => 'Campeón 1993'],

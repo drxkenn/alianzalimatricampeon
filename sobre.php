@@ -45,6 +45,7 @@ require 'includes/header.php';
       <div class="col-lg-4 col-md-6">
         <div class="team-card">
           <div class="card-body p-4 text-center">
+            <img src="assets/img/equipo/nathalin.jpg" alt="Nathalin Rodriguez" class="rounded-circle img-fluid mx-auto d-block mb-3 team-avatar">
             <div class="role-tag mb-4">Nathalin Rodriguez</div>
             <p class="text-muted mb-0">Ing. Informatico</p>
             <p class="small text-muted">Amo programar en PHP</p>
@@ -56,6 +57,7 @@ require 'includes/header.php';
       <div class="col-lg-4 col-md-6">
         <div class="team-card">
           <div class="card-body p-4 text-center">
+            <img src="assets/img/equipo/rodrigo.jpg" alt="Rodrigo Cadillo" class="rounded-circle img-fluid mx-auto d-block mb-3 team-avatar">
             <div class="role-tag mb-4">Rodrigo Cadillo</div>
             <p class="text-muted mb-0">Ing. Informatico</p>
             <p class="small text-muted">PHP es mi pasión</p>
@@ -67,6 +69,7 @@ require 'includes/header.php';
       <div class="col-lg-4 col-md-6">
         <div class="team-card">
           <div class="card-body p-4 text-center">
+            <img src="assets/img/equipo/jair.jpg" alt="Jair Juarez" class="rounded-circle img-fluid mx-auto d-block mb-3 team-avatar">
             <div class="role-tag mb-4">Jair Juarez</div>
             <p class="text-muted mb-0">Ing. Informatico</p>
             <p class="small text-muted">Arriba Alianza, Arriba PHP!!!</p>
@@ -82,7 +85,7 @@ require 'includes/header.php';
     <div class="card shadow-sm border-0">
       <div class="card-body text-center">
         <h2 class="h4 fw-bold mb-3">Asignación de archivos (equipo de 3)</h2>
-        <p class="text-muted">Perfecto — la división fue realizada y cada miembro ya trabajó en los archivos asignados. A continuación la lista de archivos por responsable.</p>
+        <p class="text-muted">A continuación la lista de archivos por responsable.</p>
 
         <div class="row mt-4">
           <div class="col-md-4">

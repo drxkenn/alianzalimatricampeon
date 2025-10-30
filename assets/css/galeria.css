@@ -1,4 +1,3 @@
-/* Estilos para la Galería (cards minimalistas) */
 .gallery-card { border: 0; border-radius: 0.6rem; overflow: hidden; transition: transform 0.22s ease, box-shadow 0.22s ease; }
 .gallery-card:hover { transform: translateY(-6px); box-shadow: 0 12px 30px rgba(0,0,0,0.12); }
 .gallery-img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.3s ease; display:block; }

@@ -3,7 +3,6 @@ $pageTitle = "Plantel";
 require 'includes/header.php'; 
 ?>
 
-<!-- Añadimos la clase page-plantel al body -->
 <script>document.body.classList.add('page-plantel');</script>
 
 <div class="overlay">

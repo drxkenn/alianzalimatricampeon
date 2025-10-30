@@ -10,8 +10,6 @@ require 'includes/header.php';
 
 <div class="container my-5">
   <div class="row g-5">
-    
-    <!-- Columna de ALTAS (IN) -->
     <div class="col-lg-6">
       <h2 class="mb-4 fw-bold text-success">Altas (Llegadas)</h2>
       <div class="card shadow-sm border-0 rounded-3">
@@ -69,7 +67,6 @@ require 'includes/header.php';
       </div>
     </div>
 
-    <!-- Columna de BAJAS (OUT) -->
     <div class="col-lg-6">
       <h2 class="mb-4 fw-bold text-danger">Bajas (Salidas)</h2>
       <div class="card shadow-sm border-0 rounded-3">

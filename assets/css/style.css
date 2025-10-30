@@ -1,7 +1,26 @@
-/* --- Variables de Color (Tema Alianza Lima) --- */
 :root {
-  --alianza-blue: #003366; /* Azul oscuro principal */
-  --alianza-blue-light: #0d47a1; /* Azul más claro para hover */
+  --alianza-blue: #003366;
+  --alianza-blue-light: #0d47a1;
   --alianza-white: #FFFFFF;
-  --alianza-gray: #f8f9fa; /* Fondo claro */
+  --alianza-gray: #f8f9fa;
+}
+
+.page-header {
+  text-align: center;
+  padding: 3rem 1.5rem;
+  color: var(--alianza-white);
+  background-color: var(--alianza-blue);
+  font-family: 'Inter', system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: var(--alianza-gray);
+}
+
+.page-header .lead {
+  color: rgba(255,255,255,0.85);
 }

@@ -1,6 +1,15 @@
-/* Plantel / Formación styles extracted from style.css */
+body.page-plantel {
+  background: url('../img/cancha.jpg') center/cover no-repeat fixed;
+}
 
-/* Estilos para la formación táctica */
+.overlay {
+  background: rgba(0, 0, 0, 0.75);
+  min-height: 100vh;
+  color: var(--alianza-white);
+  padding: 3rem 0;
+}
+
+
 .formation-433 {
   position: relative;
   width: 100%;
@@ -22,7 +31,6 @@
   padding: 20px 10px;
 }
 
-/* Estilos para las cards de jugadores */
 .player-card {
   background: #111111;
   transition: all 0.3s ease;
@@ -60,7 +68,6 @@
   opacity: 0.7;
 }
 
-/* Media queries para la formación */
 @media (max-width: 1200px) {
   .player-card { width: 160px; }
   .player-card .card-img-wrapper { height: 180px; }
@@ -92,7 +99,6 @@
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
 
-/* Posiciones específicas */
 .formation-gk { margin-top: 20px; }
 .formation-def { margin-top: 40px; }
 .formation-mid { margin-top: 40px; }
@@ -143,7 +149,6 @@
   border: 1px solid rgba(218, 165, 32, 0.3);
 }
 
-/* Estilos para las fotos de jugadores (lista/tabla) */
 .player-photo {
   width: 60px;
   height: 60px;
@@ -158,3 +163,69 @@
 .player-photo img { width: 100%; height: 100%; object-fit: cover; object-position: center top; }
 
 @media (max-width: 768px) { .player-photo { width: 50px; height: 50px; } }
+
+.table-responsive {
+  background: rgba(0,0,0,0.45);
+  border-radius: 0.75rem;
+  padding: 0.75rem;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.45);
+  margin: 1rem 0;
+  overflow: auto;
+}
+
+.table-dark-custom {
+  border-radius: 0.5rem;
+  overflow: hidden;
+  border-collapse: separate;
+}
+
+.table-dark-custom thead th {
+  background: linear-gradient(90deg, var(--alianza-blue), #0b4f88);
+  color: var(--alianza-white);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.6px;
+  border: none;
+  position: sticky;
+  top: 0;
+  z-index: 3;
+}
+
+.table-dark-custom tbody tr {
+  transition: transform 0.18s ease, background-color 0.18s ease;
+}
+
+.table-dark-custom tbody tr:nth-child(odd) {
+  background: rgba(255,255,255,0.02);
+}
+
+.table-dark-custom tbody tr:hover {
+  transform: translateY(-4px);
+  background: rgba(255,255,255,0.03);
+}
+
+.table-dark-custom td, .table-dark-custom th {
+  vertical-align: middle;
+  border: none;
+}
+
+.table-dark-custom td:first-child {
+  font-weight: 700;
+  width: 60px;
+}
+
+.table-dark-custom .p-3 {
+  padding-top: 0.9rem !important;
+  padding-bottom: 0.9rem !important;
+}
+
+@media (max-width: 768px) {
+  .table-responsive { padding: 0.5rem; }
+  .table-dark-custom thead th { font-size: 0.85rem; }
+  .table-dark-custom td, .table-dark-custom th { font-size: 0.9rem; }
+}
+
+@media (max-width: 480px) {
+  .table-dark-custom thead th { display: table-cell; }
+  .table-dark-custom td, .table-dark-custom th { white-space: nowrap; }
+}

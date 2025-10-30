@@ -1,5 +1,5 @@
 <?php
-  define('BASE_URL', '/alianzalimatricampeon/'); 
+  define('BASE_URL', '/alianza/'); 
 ?>
 <!DOCTYPE html>
 <html lang="es">
@@ -22,7 +22,6 @@
   <!-- Custom CSS -->
   <link rel="stylesheet" href="<?php echo BASE_URL; ?>assets/css/style.css">
   <link rel="stylesheet" href="<?php echo BASE_URL; ?>assets/css/navbar.css">
-  <!-- Page-specific CSS (split for maintainability) -->
   <link rel="stylesheet" href="<?php echo BASE_URL; ?>assets/css/index.css">
   <link rel="stylesheet" href="<?php echo BASE_URL; ?>assets/css/sobre.css">
   <link rel="stylesheet" href="<?php echo BASE_URL; ?>assets/css/galeria.css">

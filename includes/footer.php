@@ -1,6 +1,5 @@
-</main> <!-- Fin del contenedor principal -->
+</main> 
 
-<!-- Footer minimalista con redes sociales -->
 <footer class="site-footer bg-dark text-white py-4 mt-auto">
   <div class="container d-flex flex-column flex-md-row align-items-center justify-content-between">
     <div class="d-flex align-items-center mb-3 mb-md-0">
@@ -48,7 +47,6 @@
   </div>
 </footer>
 
-<!-- Bootstrap 5 JS Bundle (opcional) -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
 </body>
 </html>

@@ -13,11 +13,6 @@ require 'includes/header.php';
     <div class="col-12">
       <div class="card shadow-sm border-0 rounded-3">
         <div class="card-body p-0">
-          
-          <!-- 
-            Usamos .table-responsive para que la tabla no rompa el layout en móviles 
-            y permita scroll horizontal si es necesario.
-          -->
           <div class="table-responsive">
             <table class="table table-hover table-borderless mb-0" style="font-size: 0.95rem;">
               <thead class="table-header-alianza">

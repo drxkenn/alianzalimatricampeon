@@ -1,4 +1,4 @@
-/* Historia styles moved from style.css */
+
 body.page-historia {
   background-color: #000;
 }
@@ -68,7 +68,6 @@ body.page-historia {
   filter: brightness(1.1);
 }
 
-/* Ajustes responsivos para las imágenes */
 @media (max-width: 1200px) {
   .historia-image {
     aspect-ratio: 16/10;
@@ -116,7 +115,6 @@ body.page-historia {
   }
 }
 
-/* Responsive adjustments for historia */
 @media (max-width: 991px) {
   .historia-item {
     margin-bottom: 3rem;
