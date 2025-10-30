@@ -30,16 +30,16 @@ require 'includes/header.php';
                 </tr>
               </thead>
               <tbody>
-                <!-- Pedro Gallese -->
+                <!-- Guillermo Viscarra -->
                 <tr>
                   <td class="p-3 align-middle">
                     <div class="player-photo">
-                      <img src="assets/img/jugadores/pedro_gallese.webp" alt="Pedro Gallese" class="img-fluid rounded-circle">
+                      <img src="assets/img/jugadores/guillermo_viscarra.webp" alt="Guillermo Viscarra" class="img-fluid rounded-circle">
                     </div>
                   </td>
-                  <td class="p-3 align-middle fw-bold">Pedro Gallese</td>
+                  <td class="p-3 align-middle fw-bold">Guillermo Viscarra</td>
                   <td class="p-3 align-middle text-muted">Arquero</td>
-                  <td class="p-3 align-middle text-muted">34</td>
+                  <td class="p-3 align-middle text-muted">32</td>
                   <td class="p-3 align-middle text-end fw-bold fs-6" style="color: var(--alianza-blue);">€ 1.5M</td>
                 </tr>
                 <!-- Carlos Zambrano -->
@@ -77,6 +77,53 @@ require 'includes/header.php';
                   <td class="p-3 align-middle text-muted">Extremo Derecho</td>
                   <td class="p-3 align-middle text-muted">26</td>
                   <td class="p-3 align-middle text-end fw-bold fs-6" style="color: var(--alianza-blue);">€ 1.0M</td>
+                </tr>
+                <!-- Paolo Guerrero -->
+                <tr>
+                  <td class="p-3 align-middle">
+                    <div class="player-photo">
+                      <img src="assets/img/jugadores/paolo_guerrero.png" alt="Kevin Serna" class="img-fluid rounded-circle">
+                    </div>
+                  </td>
+                  <td class="p-3 align-middle fw-bold">Paolo Guerrero</td>
+                  <td class="p-3 align-middle text-muted">Delantero Centro</td>
+                  <td class="p-3 align-middle text-muted">41</td>
+                  <td class="p-3 align-middle text-end fw-bold fs-6" style="color: var(--alianza-blue);">€ 50.0 K</td>
+                </tr>
+                <!-- Eryc Castillo -->
+                <tr>
+                  <td class="p-3 align-middle">
+                    <div class="player-photo">
+                      <img src="assets/img/jugadores/eryc_castillo1.png" alt="Kevin Serna" class="img-fluid rounded-circle">
+                    </div>
+                  </td>
+                  <td class="p-3 align-middle fw-bold">Eryc Castillo</td>
+                  <td class="p-3 align-middle text-muted">Extremo Derecho</td>
+                  <td class="p-3 align-middle text-muted">30</td>
+                  <td class="p-3 align-middle text-end fw-bold fs-6" style="color: var(--alianza-blue);">€ 500 K</td>
+                </tr>
+                <tr>
+                  <!-- Miguel Trauco -->
+                  <td class="p-3 align-middle">
+                    <div class="player-photo">
+                      <img src="assets/img/jugadores/miguel_trauco.jpg" alt="Kevin Serna" class="img-fluid rounded-circle">
+                    </div>
+                  </td>
+                  <td class="p-3 align-middle fw-bold">Miguel Trauco</td>
+                  <td class="p-3 align-middle text-muted">Lateral Izquierdo</td>
+                  <td class="p-3 align-middle text-muted">33</td>
+                  <td class="p-3 align-middle text-end fw-bold fs-6" style="color: var(--alianza-blue);">€ 600 K</td>
+                </tr>
+                <!-- Jesus Castillo -->
+                  <td class="p-3 align-middle">
+                    <div class="player-photo">
+                      <img src="assets/img/jugadores/jesus_castillo.jpg" alt="Kevin Serna" class="img-fluid rounded-circle">
+                    </div>
+                  </td>
+                  <td class="p-3 align-middle fw-bold">Jesus Castillo</td>
+                  <td class="p-3 align-middle text-muted">Pivote</td>
+                  <td class="p-3 align-middle text-muted">29</td>
+                  <td class="p-3 align-middle text-end fw-bold fs-6" style="color: var(--alianza-blue);">€ 500 K</td>
                 </tr>
               </tbody>
             </table>
