@@ -1,7 +1,5 @@
 <?php
-  // Define la URL base de tu proyecto
-  // (ajústala si tu proyecto no está en la raíz)
-  define('BASE_URL', '/alianza/'); 
+  define('BASE_URL', '/alianzalimatricampeon/'); 
 ?>
 <!DOCTYPE html>
 <html lang="es">
@@ -10,6 +8,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title><?php echo isset($pageTitle) ? $pageTitle . ' - Alianza Transfer' : 'Alianza Transfer'; ?></title>
   
+  <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon">
+
   <!-- Bootstrap 5 CDN -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" xintegrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
   
@@ -21,6 +21,15 @@
   
   <!-- Custom CSS -->
   <link rel="stylesheet" href="<?php echo BASE_URL; ?>assets/css/style.css">
+  <link rel="stylesheet" href="<?php echo BASE_URL; ?>assets/css/navbar.css">
+  <!-- Page-specific CSS (split for maintainability) -->
+  <link rel="stylesheet" href="<?php echo BASE_URL; ?>assets/css/index.css">
+  <link rel="stylesheet" href="<?php echo BASE_URL; ?>assets/css/sobre.css">
+  <link rel="stylesheet" href="<?php echo BASE_URL; ?>assets/css/galeria.css">
+  <link rel="stylesheet" href="<?php echo BASE_URL; ?>assets/css/historia.css">
+  <link rel="stylesheet" href="<?php echo BASE_URL; ?>assets/css/footer.css">
+  <link rel="stylesheet" href="<?php echo BASE_URL; ?>assets/css/plantel.css">
+  <link rel="stylesheet" href="<?php echo BASE_URL; ?>assets/css/estadisticas.css">
 </head>
 <body class="bg-light">
 

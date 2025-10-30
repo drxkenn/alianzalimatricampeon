@@ -1,0 +1,160 @@
+/* Plantel / Formación styles extracted from style.css */
+
+/* Estilos para la formación táctica */
+.formation-433 {
+  position: relative;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  background: rgba(0, 51, 102, 0.2);
+  border: 2px solid rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  margin-bottom: 4rem;
+  padding: 20px;
+}
+
+.formation-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 20px 10px;
+}
+
+/* Estilos para las cards de jugadores */
+.player-card {
+  background: #111111;
+  transition: all 0.3s ease;
+  width: 180px;
+  margin: 0;
+  flex-shrink: 0;
+  border: 1px solid rgba(218, 165, 32, 0.2);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+  color: var(--alianza-white);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.player-card .card-body {
+  background: linear-gradient(145deg, #111111, #1a1a1a);
+  padding: 1rem;
+  border-top: 1px solid rgba(218, 165, 32, 0.1);
+}
+
+.player-card .card-title {
+  color: goldenrod;
+  font-weight: bold;
+  font-size: 1rem;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+.player-card .card-text {
+  color: #DAA520 !important;
+  font-size: 0.9rem;
+  opacity: 0.9;
+}
+
+.player-card small.text-muted {
+  color: #FFD700 !important;
+  opacity: 0.7;
+}
+
+/* Media queries para la formación */
+@media (max-width: 1200px) {
+  .player-card { width: 160px; }
+  .player-card .card-img-wrapper { height: 180px; }
+}
+
+@media (max-width: 992px) {
+  .formation-433 { padding: 10px; }
+  .formation-row { gap: 10px; }
+  .player-card { width: 140px; }
+  .player-card .card-img-wrapper { height: 160px; }
+  .player-card .market-value { font-size: 0.8rem; padding: 0.3rem 0.8rem; }
+}
+
+@media (max-width: 768px) {
+  .formation-433 { min-height: auto; }
+  .formation-row { flex-direction: row; justify-content: center; margin-bottom: 0; }
+  .formation-gk, .formation-def, .formation-mid, .formation-fw { margin-top: 0; }
+  .player-card { width: calc(50% - 20px); max-width: 200px; }
+}
+
+@media (max-width: 576px) {
+  .formation-row { gap: 15px; }
+  .player-card { width: calc(100% - 20px); max-width: 240px; }
+  .player-card .card-img-wrapper { height: 200px; }
+}
+
+.player-card:hover {
+  transform: scale(1.03);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Posiciones específicas */
+.formation-gk { margin-top: 20px; }
+.formation-def { margin-top: 40px; }
+.formation-mid { margin-top: 40px; }
+.formation-fw { margin-top: 40px; }
+
+.player-card .card-img-wrapper {
+  height: 200px;
+  overflow: hidden;
+  border-bottom: 2px solid goldenrod;
+  position: relative;
+}
+
+.player-card .card-img-wrapper::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 70%;
+  background: linear-gradient(to top, #111111, transparent);
+}
+
+.player-card .card-img-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center top;
+  transition: all 0.4s ease;
+  filter: contrast(1.1);
+}
+
+.player-card:hover .card-img-wrapper img {
+  transform: scale(1.08);
+  filter: contrast(1.2) brightness(1.1);
+}
+
+.player-card .market-value {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: rgba(0, 0, 0, 0.85);
+  color: goldenrod;
+  padding: 0.5rem 1rem;
+  border-radius: 2rem;
+  font-weight: bold;
+  z-index: 1;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
+  border: 1px solid rgba(218, 165, 32, 0.3);
+}
+
+/* Estilos para las fotos de jugadores (lista/tabla) */
+.player-photo {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 2px solid var(--alianza-blue);
+  transition: transform 0.2s ease-in-out;
+}
+
+.player-photo:hover { transform: scale(1.1); }
+
+.player-photo img { width: 100%; height: 100%; object-fit: cover; object-position: center top; }
+
+@media (max-width: 768px) { .player-photo { width: 50px; height: 50px; } }

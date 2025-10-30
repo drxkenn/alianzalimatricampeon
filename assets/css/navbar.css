@@ -1,0 +1,23 @@
+/* Navbar: tema y contraste específico del sitio */
+.bg-alianza {
+  background-color: var(--alianza-blue) !important;
+  background-image: none !important;
+}
+
+/* Asegurar contraste en la marca y enlaces dentro del navbar */
+.navbar.bg-alianza .navbar-brand,
+.navbar.bg-alianza .nav-link {
+  color: var(--alianza-white) !important;
+}
+.navbar.bg-alianza .nav-link:hover,
+.navbar.bg-alianza .nav-link:focus {
+  color: #DAA520 !important; /* acento dorado en hover */
+}
+
+/* Ajustes adicionales para el toggler en tema oscuro (si necesario) */
+.navbar.bg-alianza .navbar-toggler {
+  border-color: rgba(255,255,255,0.1);
+}
+.navbar.bg-alianza .navbar-toggler-icon {
+  filter: brightness(0) invert(1);
+}

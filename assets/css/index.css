@@ -1,0 +1,93 @@
+/* Index specific styles moved from style.css */
+
+/* --- Video (Index) --- */
+.video-container {
+  position: relative;
+  width: 100%;
+  height: 0;
+  overflow: hidden;
+  background-color: #000;
+}
+
+/* Configuración para Desktop (16:9) */
+@media (min-width: 768px) {
+  .video-container {
+    padding-bottom: 56.25%; /* Aspect Ratio 16:9 */
+  }
+  .video-desktop {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .video-mobile {
+    display: none;
+  }
+}
+
+/* Configuración para Mobile (9:16) */
+@media (max-width: 767px) {
+  .video-container {
+    padding-bottom: 177.78%; /* Aspect Ratio 9:16 */
+  }
+  .video-desktop {
+    display: none;
+  }
+  .video-mobile {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+/* Palmarés: mostrar el contador sólo en hover/focus (accesible) */
+.palmares-item {
+  cursor: pointer;
+}
+
+.palmares-item img {
+  opacity: 1;
+  transition: opacity 0.18s ease, transform 0.18s ease;
+}
+
+.palmares-score {
+  opacity: 0;
+  transform: translateY(6px) scale(0.98);
+  transition: opacity 0.18s ease 0.12s, transform 0.18s ease 0.12s;
+  pointer-events: none;
+  font-size: 1.8rem;
+}
+
+.palmares-item:hover img,
+.palmares-item:focus img,
+.palmares-item:focus-within img {
+  opacity: 0.18;
+  filter: grayscale(80%);
+}
+
+.palmares-item:hover .palmares-score,
+.palmares-item:focus .palmares-score,
+.palmares-item:focus-within .palmares-score {
+  opacity: 1;
+  transform: translateY(0) scale(1);
+  pointer-events: auto;
+}
+
+/* Ajuste para móviles: mostrar el número por defecto en pantallas pequeñas */
+@media (max-width: 576px) {
+  .palmares-score {
+    opacity: 1;
+    transform: none;
+    position: static;
+    margin-top: 0.25rem;
+    font-size: 1.25rem;
+  }
+  .palmares-item img { opacity: 1; filter: none; }
+}

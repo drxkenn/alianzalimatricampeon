@@ -20,7 +20,11 @@ require 'includes/header.php';
           <!-- Fichaje 1 -->
           <li class="list-group-item p-3">
             <div class="d-flex align-items-center">
-              <img src="https://placehold.co/60x60/EEEEEE/333333?text=Foto" alt="Jugador" class="img-fluid rounded-circle me-3">
+              <div class="me-3 flex-shrink-0">
+                <div class="ratio ratio-1x1" style="width:64px;">
+                  <img src="assets/img/fichajes/kevin_serna.jpg" alt="Kevin Serna" class="rounded-circle object-fit-cover w-100 h-100">
+                </div>
+              </div>
               <div class="flex-grow-1">
                 <h5 class="mb-0 fw-bold">Kevin Serna</h5>
                 <small class="text-muted">Desde: ADT de Tarma</small>
@@ -32,7 +36,11 @@ require 'includes/header.php';
           <!-- Fichaje 2 -->
           <li class="list-group-item p-3">
             <div class="d-flex align-items-center">
-              <img src="https://placehold.co/60x60/EEEEEE/333333?text=Foto" alt="Jugador" class="img-fluid rounded-circle me-3">
+              <div class="me-3 flex-shrink-0">
+                <div class="ratio ratio-1x1" style="width:64px;">
+                  <img src="assets/img/fichajes/jiovany_ramos.png" alt="Jiovany Ramos" class="rounded-circle object-fit-cover w-100 h-100">
+                </div>
+              </div>
               <div class="flex-grow-1">
                 <h5 class="mb-0 fw-bold">Jiovany Ramos</h5>
                 <small class="text-muted">Desde: Dep. Táchira (VEN)</small>
@@ -44,7 +52,11 @@ require 'includes/header.php';
           <!-- Fichaje 3 -->
           <li class="list-group-item p-3">
             <div class="d-flex align-items-center">
-              <img src="https://placehold.co/60x60/EEEEEE/333333?text=Foto" alt="Jugador" class="img-fluid rounded-circle me-3">
+              <div class="me-3 flex-shrink-0">
+                <div class="ratio ratio-1x1" style="width:64px;">
+                  <img src="assets/img/fichajes/cecilio_waterman.jpg" alt="Cecilio Waterman" class="rounded-circle object-fit-cover w-100 h-100">
+                </div>
+              </div>
               <div class="flex-grow-1">
                 <h5 class="mb-0 fw-bold">Cecilio Waterman</h5>
                 <small class="text-muted">Desde: Cobresal (CHI)</small>
@@ -66,7 +78,11 @@ require 'includes/header.php';
           <!-- Baja 1 -->
           <li class="list-group-item p-3">
             <div class="d-flex align-items-center">
-              <img src="https://placehold.co/60x60/EEEEEE/333333?text=Foto" alt="Jugador" class="img-fluid rounded-circle me-3">
+              <div class="me-3 flex-shrink-0">
+                <div class="ratio ratio-1x1" style="width:64px;">
+                  <img src="assets/img/fichajes/josepmir_bellon.png" alt="Josepmir Ballón" class="rounded-circle object-fit-cover w-100 h-100">
+                </div>
+              </div>
               <div class="flex-grow-1">
                 <h5 class="mb-0 fw-bold">Josepmir Ballón</h5>
                 <small class="text-muted">Hacia: U. César Vallejo</small>
@@ -78,7 +94,11 @@ require 'includes/header.php';
           <!-- Baja 2 -->
           <li class="list-group-item p-3">
             <div class="d-flex align-items-center">
-              <img src="https://placehold.co/60x60/EEEEEE/333333?text=Foto" alt="Jugador" class="img-fluid rounded-circle me-3">
+              <div class="me-3 flex-shrink-0">
+                <div class="ratio ratio-1x1" style="width:64px;">
+                  <img src="assets/img/fichajes/jairo_concha.png" alt="Jairo Concha" class="rounded-circle object-fit-cover w-100 h-100">
+                </div>
+              </div>
               <div class="flex-grow-1">
                 <h5 class="mb-0 fw-bold">Jairo Concha</h5>
                 <small class="text-muted">Hacia: Universitario</small>

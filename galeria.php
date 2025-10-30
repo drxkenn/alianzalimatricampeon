@@ -3,139 +3,46 @@ $pageTitle = "Galería";
 require 'includes/header.php'; 
 ?>
 
-<!-- Estilos personalizados para el slider (Opcional, pero recomendado) -->
-<style>
-    .carousel-item img {
-        /* Fija una altura máxima para las imágenes del slider */
-        max-height: 75vh; /* 75% de la altura de la pantalla */
-        object-fit: cover; /* Se asegura que la imagen cubra el espacio sin deformarse */
-        width: 100%;
-    }
-
-    .carousel-caption {
-        /* Añade un fondo oscuro semitransparente a los textos */
-        background-color: rgba(0, 0, 0, 0.5);
-        border-radius: 0.5rem;
-        padding: 1rem;
-    }
-
-    /* Mejora la visibilidad de las flechas de control */
-    .carousel-control-prev-icon,
-    .carousel-control-next-icon {
-        background-color: rgba(0, 0, 0, 0.3);
-        border-radius: 50%;
-        padding: 1.2rem;
-    }
-</style>
-
-<!-- Encabezado de la página (como en tu captura) -->
+<!-- Encabezado de la página (minimalista) -->
 <div class="page-header" style="text-align: center; padding: 3rem 1.5rem; color: white; background-color: var(--alianza-blue, #003366);">
   <h1 class="display-4 fw-bold">GALERÍA</h1>
   <p class="lead mb-0">Las mejores imágenes de Alianza Lima</p>
 </div>
 
-<!-- Contenido de la Galería (El Slider) -->
+<!-- Gallery: grid de cards responsive y minimalistas -->
 <div class="container my-5">
-  <div class="row">
-    <div class="col-lg-10 mx-auto">
+  <div class="row g-4">
 
-      <!-- 
-        INICIO DEL SLIDER (Bootstrap Carousel)
-        - data-bs-ride="carousel" hace que se mueva solo.
-      -->
-      <div id="galeriaSlider" class="carousel slide carousel-fade shadow-lg" data-bs-ride="carousel">
-        
-        <!-- 1. Indicadores (los puntos de abajo) -->
-        <div class="carousel-indicators">
-          <!-- 
-            - data-bs-target debe ser el ID del slider (#galeriaSlider)
-            - data-bs-slide-to empieza en 0
-            - El primero debe tener la clase 'active'
-          -->
-          <button type="button" data-bs-target="#galeriaSlider" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-          <button type="button" data-bs-target="#galeriaSlider" data-bs-slide-to="1" aria-label="Slide 2"></button>
-          <button type="button" data-bs-target="#galeriaSlider" data-bs-slide-to="2" aria-label="Slide 3"></button>
-          <button type="button" data-bs-target="#galeriaSlider" data-bs-slide-to="3" aria-label="Slide 4"></button>
-          <button type="button" data-bs-target="#galeriaSlider" data-bs-slide-to="4" aria-label="Slide 5"></button>
+    <?php
+    // Fotos históricas por año ganadas (ajusta las rutas si hace falta)
+    $images = [
+      ['year' => '2001', 'src' => 'assets/img/historia/2001.jpg', 'title' => 'Campeón 2001'],
+      ['year' => '2010', 'src' => 'assets/img/historia/1933.jpg', 'title' => 'Campeón 1993'],
+      ['year' => '2014', 'src' => 'assets/img/historia/2014.jpg', 'title' => 'Campeón 2014'],
+      ['year' => '2017', 'src' => 'assets/img/historia/2017.jpg', 'title' => 'Campeón 2017'],
+      ['year' => '2021', 'src' => 'assets/img/historia/2021.jpg', 'title' => 'Campeón 2021'],
+      ['year' => 'Leyendas', 'src' => 'assets/img/historia/leyendas.webp', 'title' => 'Leyendas del club']
+    ];
+
+    foreach ($images as $img): ?>
+
+      <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+        <div class="card gallery-card h-100 border-0 shadow-sm position-relative">
+          <div class="ratio ratio-4x3 overflow-hidden position-relative">
+            <img src="<?php echo $img['src']; ?>" loading="lazy" class="card-img-top gallery-img" alt="<?php echo htmlspecialchars($img['title']); ?>">
+          </div>
+          <div class="card-body">
+            <h5 class="card-title mb-1 small text-uppercase fw-semibold"><?php echo htmlspecialchars($img['title']); ?></h5>
+            <p class="card-text text-muted small mb-0">Año: <span class="fw-bold"><?php echo htmlspecialchars($img['year']); ?></span></p>
+          </div>
         </div>
-
-        <!-- 2. Contenedor de las Imágenes -->
-        <div class="carousel-inner rounded-3">
-
-          <!-- 
-            SLIDE 1 (El primero debe tener la clase 'active')
-            - Reemplaza 'src' con la ruta a tu imagen.
-            - Reemplaza 'alt' con una descripción.
-          -->
-          <div class="carousel-item active" data-bs-interval="4000">
-            <img src="./assets/img/historia/2001.jpg" class="d-block w-100" alt="Foto de la hinchada de Alianza Lima">
-            <!-- Texto opcional (Caption) -->
-            <div class="carousel-caption d-none d-md-block">
-              <h5>La Hinchada Blanquiazul</h5>
-              <p>El corazón del club latiendo en Matute.</p>
-            </div>
-          </div>
-
-          <!-- SLIDE 2 -->
-          <div class="carousel-item" data-bs-interval="4000">
-            <!-- REEMPLAZA ESTA IMAGEN -->
-            <img src="./assets/img/historia/2014.jpg" class="d-block w-100" alt="Foto del equipo campeón">
-            <div class="carousel-caption d-none d-md-block">
-              <h5>Campeones 2022</h5>
-              <p>El equipo levantando la copa.</p>
-            </div>
-          </div>
-
-          <!-- SLIDE 3 -->
-          <div class="carousel-item" data-bs-interval="4000">
-            <!-- REEMPLAZA ESTA IMAGEN -->
-            <img src="./assets/img/historia/2017.jpg" class="d-block w-100" alt="Foto de un gol histórico">
-            <div class="carousel-caption d-none d-md-block">
-              <h5>Gol Inolvidable</h5>
-              <p>Celebración de un gol clave.</p>
-            </div>
-          </div>
-
-          <!-- SLIDE 4 -->
-          <div class="carousel-item" data-bs-interval="4000">
-            <!-- REEMPLAZA ESTA IMAGEN -->
-            <img src="./assets/img/historia/2021.jpg" class="d-block w-100" alt="Estadio de Matute">
-            <div class="carousel-caption d-none d-md-block">
-              <h5>El Alejandro Villanueva</h5>
-              <p>Nuestra casa, la caldera.</p>
-            </div>
-          </div>
-
-          <!-- SLIDE 5 -->
-          <div class="carousel-item" data-bs-interval="4000">
-            <!-- REEMPLAZA ESTA IMAGEN -->
-            <img src="https://placehold.co/1200x700/CCCCCC/003366?text=Leyendas+del+Club" class="d-block w-100" alt="Leyendas del club">
-            <div class="carousel-caption d-none d-md-block">
-              <h5>Nuestras Leyendas</h5>
-              <p>Ídolos que forjaron nuestra historia.</p>
-            </div>
-          </div>
-
-          <!-- Puedes seguir añadiendo más <div class="carousel-item">...</div> aquí -->
-
-        </div>
-
-        <!-- 3. Controles (Flechas Izquierda/Derecha) -->
-        <button class="carousel-control-prev" type="button" data-bs-target="#galeriaSlider" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Anterior</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#galeriaSlider" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Siguiente</span>
-        </button>
       </div>
-      <!-- FIN DEL SLIDER -->
 
-    </div>
+    <?php endforeach; ?>
+
   </div>
 </div>
 
-<?php 
+<?php
 require 'includes/footer.php'; 
 ?>
