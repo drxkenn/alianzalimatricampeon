@@ -10,7 +10,7 @@ require 'includes/header.php';
   <div class="container">
     <!-- Encabezado -->
     <div class="text-center mb-5">
-      <h1 class="display-4 fw-bold text-white">Plantel 2025</h1>
+      <h1 class="display-4 fw-bold text-white" style="font-family: 'Merriweather', serif;">Plantel 2025</h1>
       <p class="lead text-white-50">Equipo Profesional del Club Alianza Lima</p>
     </div>
 
@@ -164,7 +164,7 @@ require 'includes/header.php';
     </div>
 
     <!-- Suplentes -->
-    <h2 class="h3 text-white mb-4 text-center">Plantel Suplente</h2>
+    <h2 class="h3 text-white mb-4 text-center" style="font-family: 'Merriweather', serif;">Plantel Suplente</h2>
     <div class="table-responsive">
       <table class="table table-hover table-dark-custom mb-0">
         <thead>

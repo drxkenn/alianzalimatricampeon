@@ -4,7 +4,7 @@ require 'includes/header.php';
 ?>
 
 <div class="page-header">
-  <h1 class="display-5">Últimas Noticias</h1>
+  <h1 class="display-5" style="font-family: 'Merriweather', serif;">Últimas Noticias</h1>
   <p class="lead mb-0">Novedades del Club Alianza Lima</p>
 </div>
 
@@ -31,7 +31,7 @@ require 'includes/header.php';
     <!-- Noticia 2 -->
     <div class="col-md-6 col-lg-4">
       <div class="card shadow-sm border-0 rounded-3 h-100">
-        <img src="https://placehold.co/600x350/EEEEEE/333333?text=Noticia+2" class="card-img-top" alt="Imagen de la noticia 2">
+        <img src="assets/img/noticia/noticia_02.jpg" class="card-img-top" alt="Imagen de la noticia 2">
         <div class="card-body d-flex flex-column">
           <h5 class="card-title fw-bold" style="color: var(--alianza-blue);">Nuevo Refuerzo en la Mira</h5>
           <p class="card-text text-muted flex-grow-1">Se rumorea que el club está en negociaciones avanzadas con un mediocampista argentino para la próxima temporada...</p>
@@ -48,7 +48,7 @@ require 'includes/header.php';
     <!-- Noticia 3 -->
     <div class="col-md-6 col-lg-4">
       <div class="card shadow-sm border-0 rounded-3 h-100">
-        <img src="https://placehold.co/600x350/EEEEEE/333333?text=Noticia+3" class="card-img-top" alt="Imagen de la noticia 3">
+        <img src="./assets/img/noticia/noticia_03.webp" class="card-img-top" alt="Imagen de la noticia 3">
         <div class="card-body d-flex flex-column">
           <h5 class="card-title fw-bold" style="color: var(--alianza-blue);">Matute se Viste de Gala</h5>
           <p class="card-text text-muted flex-grow-1">El Estadio Alejandro Villanueva presenta mejoras en la iluminación y el césped para los próximos partidos de local...</p>
@@ -131,7 +131,7 @@ require 'includes/header.php';
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
-        <img src="https://placehold.co/1200x600/EEEEEE/333333?text=Nuevo+Refuerzo" class="img-fluid rounded mb-4" alt="Nuevo Refuerzo">
+        <img src="assets/img/noticia/noticia_022.jpg" class="img-fluid rounded mb-4" alt="Nuevo Refuerzo">
         <p>Alianza Lima está en negociaciones avanzadas con un destacado mediocampista argentino para reforzar el equipo de cara a la próxima temporada. Las conversaciones se encuentran en una etapa crucial y se espera cerrar el acuerdo en los próximos días.</p>
         <p>El jugador, con experiencia en la Primera División argentina y participación en torneos internacionales, podría ser un valioso aporte para el mediocampo blanquiazul.</p>
         <p>Los detalles finales del contrato están siendo ultimados por la directiva del club, y se espera hacer el anuncio oficial una vez se concrete la transferencia.</p>
@@ -152,7 +152,7 @@ require 'includes/header.php';
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
-        <img src="https://placehold.co/1200x600/EEEEEE/333333?text=Estadio+Matute" class="img-fluid rounded mb-4" alt="Estadio Matute">
+        <img src="./assets/img/noticia/noticia_033.webp" class="img-fluid rounded mb-4" alt="Estadio Matute">
         <p>El Estadio Alejandro Villanueva, conocido cariñosamente como Matute, ha sido sometido a importantes mejoras en su infraestructura. Las obras incluyen una actualización completa del sistema de iluminación y una renovación integral del césped.</p>
         <p>El nuevo sistema de iluminación LED cumple con los estándares internacionales más exigentes, permitiendo una mejor experiencia tanto para los jugadores como para los espectadores y las transmisiones televisivas.</p>
         <p>El césped ha sido tratado con las últimas técnicas de mantenimiento deportivo, asegurando una superficie de juego óptima para la práctica del fútbol profesional.</p>

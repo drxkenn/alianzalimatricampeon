@@ -4,7 +4,7 @@ require 'includes/header.php';
 ?>
 
 <div class="page-header">
-  <h1 class="display-5">Mercado de Fichajes 2024</h1>
+  <h1 class="display-5" style="font-family: 'Merriweather', serif;">Mercado de Fichajes 2024</h1>
   <p class="lead mb-0">Altas y Bajas (Simuladas)</p>
 </div>
 

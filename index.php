@@ -25,7 +25,7 @@ require 'includes/header.php';
   <div class="row">
     <div class="col-lg-8 mx-auto">
       <img src="assets/img/logo.png" alt="Escudo Alianza Lima" class="mb-4" style="width: 120px; border-radius: 50%;">
-      <h1 class="display-4 fw-bold text-uppercase" style="color: var(--alianza-blue);">
+      <h1 class="display-4 fw-bold text-uppercase" style="color: var(--alianza-blue); font-family: 'Merriweather', serif;">
         Club Alianza Lima
       </h1>
       <p class="lead fs-3 fw-bold fst-italic" style="color: var(--alianza-blue-light);">
@@ -33,8 +33,7 @@ require 'includes/header.php';
       </p>
       <hr class="my-4">
       <p class="fs-5 text-muted">
-        Bienvenidos a <strong>Alianza Transfer</strong>, el portal no oficial inspirado en Transfermarkt y dedicado exclusivamente al equipo más popular del Perú. Explora el valor de mercado de nuestros jugadores, el plantel actual, nuestra historia y las últimas noticias.
-      </p>
+        Bienvenido a <strong>Alianza Transfer</strong>, la plataforma de análisis y valoración de jugadores dedicada en exclusiva al Club Alianza Lima. Te traemos los datos de mercado más actualizados, estadísticas del plantel, análisis histórico y las noticias que definen al equipo más popular del Perú.</p>
       <a href="jugadores.php" class="btn btn-primary btn-lg mt-3 px-5">
         Ver Jugadores
       </a>

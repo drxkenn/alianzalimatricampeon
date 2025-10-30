@@ -4,8 +4,8 @@ require 'includes/header.php';
 ?>
 
 <div class="page-header">
-  <h1 class="display-5">Valor de Jugadores</h1>
-  <p class="lead mb-0">Valores de mercado (simulados) del plantel principal</p>
+  <h1 class="display-5" style="font-family: 'Merriweather', serif;">Valor de Jugadores</h1>
+  <p class="lead mb-0">Valores de mercado del plantel principal</p>
 </div>
 
 <div class="container my-5">
